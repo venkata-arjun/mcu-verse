@@ -22,7 +22,7 @@ export default function Register() {
     setLoading(true);
 
     try {
-      await apiRequest("/api/v1/auth/register", {
+      await apiRequest("/auth/register", {
         method: "POST",
         body: JSON.stringify(form),
       });

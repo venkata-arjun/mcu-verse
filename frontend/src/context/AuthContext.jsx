@@ -8,7 +8,7 @@ export const AuthProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    apiRequest("/api/v1/auth/me")
+    apiRequest("/auth/me")
       .then((res) => setUser(res.user))
       .catch(() => setUser(null))
       .finally(() => setLoading(false));
