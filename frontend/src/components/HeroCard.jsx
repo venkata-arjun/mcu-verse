@@ -17,13 +17,19 @@ export default function HeroCard({ hero, imageSrc }) {
   const toggleFavorite = (e) => {
     e?.stopPropagation();
 
-    if (favorite) {
-      remove(hero._id || hero.name);
-    } else {
-      add({ itemId: hero.name, type: "hero" });
-    }
-
-    setFavorite(!favorite);
+    // Instantly update UI
+    setFavorite((prev) => {
+      const newFav = !prev;
+      // Fire and forget async update
+      setTimeout(() => {
+        if (newFav) {
+          add({ itemId: hero.name, type: "hero" });
+        } else {
+          remove(hero._id || hero.name);
+        }
+      }, 0);
+      return newFav;
+    });
     setIsAnimating(true);
     setTimeout(() => setIsAnimating(false), 600);
   };
