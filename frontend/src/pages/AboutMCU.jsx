@@ -21,12 +21,12 @@ export default function AboutMCU() {
           </h1>
           <div className="grid grid-cols-1 gap-6 sm:gap-8 md:grid-cols-2 items-center">
             <div className="order-2 md:order-1 space-y-4 sm:space-y-6">
-              <p className="text-lg text-gray-300 leading-8 md:leading-10">
+              <p className="text-lg text-gray-300 leading-8 md:leading-10 text-justify">
                 Thanos is not a typical villain. He is a force of nature, a
                 being whose will is as unbreakable as his strength. His presence
                 alone inspires fear and awe across the universe.
               </p>
-              <p className="text-base text-gray-400 leading-7 md:leading-9">
+              <p className="text-base text-gray-400 leading-7 md:leading-9 text-justify">
                 He believes the universe is broken by imbalance, and that
                 unchecked growth leads to ruin. His solution is brutal but, in
                 his mind, merciful: to erase half of all life, so the rest may
@@ -82,7 +82,7 @@ export default function AboutMCU() {
                   Soul
                 </span>
               </div>
-              <p className="text-base text-gray-400 leading-loose">
+              <p className="text-base text-gray-400 leading-loose text-justify">
                 Six stones. Six fundamental forces of reality, each one a
                 fragment of creation itself. Each stone is a key to a different
                 aspect of existence. Individually, they are weapons of
@@ -104,7 +104,7 @@ export default function AboutMCU() {
           </h2>
           <div className="grid grid-cols-1 gap-6 sm:gap-8 md:grid-cols-2 items-center">
             <div className="order-2 md:order-1 space-y-4 sm:space-y-6">
-              <p className="text-base text-gray-400 leading-loose">
+              <p className="text-base text-gray-400 leading-loose text-justify">
                 The Avengers are not perfect heroes. They are a collection of
                 broken people who still show up, no matter the odds. Each
                 Avenger brings their own strengths, flaws, and beliefs to the
@@ -141,7 +141,7 @@ export default function AboutMCU() {
               />
             </div>
             <div className="space-y-6">
-              <p className="text-base text-gray-400 leading-loose">
+              <p className="text-base text-gray-400 leading-loose text-justify">
                 This is not just a clash of strength. It is inevitability versus
                 resistance, destiny versus hope. Thanos reaches for destiny,
                 believing his actions are for the greater good. The Avengers
@@ -163,7 +163,7 @@ export default function AboutMCU() {
           </h2>
           <div className="grid grid-cols-1 gap-6 sm:gap-8 md:grid-cols-2 items-center">
             <div className="order-2 md:order-1 space-y-4 sm:space-y-6">
-              <p className="text-base text-gray-400 leading-loose">
+              <p className="text-base text-gray-400 leading-loose text-justify">
                 The war happens because compromise fails, and because silence
                 enables destruction. Thanos fights for balance, convinced that
                 his way is the only way to save the universe. The Avengers fight
@@ -199,7 +199,7 @@ export default function AboutMCU() {
               />
             </div>
             <div className="space-y-6">
-              <p className="text-base text-gray-400 leading-loose">
+              <p className="text-base text-gray-400 leading-loose text-justify">
                 Iron Man. Captain America. Thor. The mind, the heart, the god.
                 Together, they define the Avengers, each representing a
                 different facet of heroism. Iron Man is the genius, the
@@ -268,7 +268,7 @@ export default function AboutMCU() {
           </div>
 
           {/* Description */}
-          <p className="mt-12 max-w-4xl mx-auto px-6 text-base sm:text-lg text-gray-400 leading-relaxed">
+          <p className="mt-12 max-w-4xl mx-auto px-6 text-base sm:text-lg text-gray-400 leading-relaxed text-justify">
             Civil War wasn’t about control. It was about accountability, about
             the struggle between freedom and security. One side trusted systems,
             believing that oversight was necessary to prevent disaster. The
@@ -295,7 +295,7 @@ export default function AboutMCU() {
               />
             </div>
             <div className="space-y-6">
-              <p className="text-base text-gray-400 leading-7 md:leading-9">
+              <p className="text-base text-gray-400 leading-7 md:leading-9 text-justify">
                 Tony Stark began as a man who built weapons, a billionaire
                 playboy with a genius mind and a troubled heart. Over time, he
                 became something more, a hero, a mentor, a friend. He ended as a
@@ -322,7 +322,7 @@ export default function AboutMCU() {
               alt="DOCTOR DOOM RISES"
               className="w-full rounded-2xl shadow-2xl shadow-marvelRed/60 object-cover"
             />
-            <p className="mt-8 text-lg text-gray-300 italic leading-8 md:leading-10">
+            <p className="mt-8 text-lg text-gray-300 italic leading-8 md:leading-10 text-justify">
               A new shadow rises. Victor von Doom has arrived, a genius and a
               tyrant whose ambitions know no bounds. Is he a savior, bringing
               order to chaos, or the greatest threat the universe has ever
