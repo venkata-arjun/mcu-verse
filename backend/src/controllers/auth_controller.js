@@ -69,8 +69,8 @@ export const login = async (req, res) => {
 
     res.cookie("token", token, {
       httpOnly: true,
-      sameSite: "lax",
-      secure: process.env.NODE_ENV === "production",
+      secure: true, // Always secure in production
+      sameSite: "none", // Required for cross-site cookies
       maxAge: 7 * 24 * 60 * 60 * 1000,
     });
 
@@ -114,8 +114,8 @@ export const googleCallback = async (req, res) => {
 
     res.cookie("token", token, {
       httpOnly: true,
-      sameSite: "lax",
-      secure: process.env.NODE_ENV === "production",
+      secure: true, // Always secure in production
+      sameSite: "none", // Required for cross-site cookies
       maxAge: 7 * 24 * 60 * 60 * 1000,
     });
 

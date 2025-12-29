@@ -15,6 +15,9 @@ connectDB();
 
 const app = express();
 
+// Trust proxy for correct protocol/header handling (required for OAuth/cookies on Render)
+app.set("trust proxy", 1);
+
 // Core middleware
 app.use(express.json());
 app.use(cookieParser());
