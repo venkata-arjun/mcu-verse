@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { apiRequest } from "../utils/api";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 export default function Register() {
   const navigate = useNavigate();
@@ -135,12 +135,12 @@ export default function Register() {
           {/* Footer */}
           <p className="text-center text-sm text-gray-500 sm:text-base">
             Already have an account?{" "}
-            <a
-              href="/login"
+            <Link
+              to="/login"
               className="font-bold text-marvelRed hover:text-red-400 hover:underline transition-colors duration-200"
             >
               Sign in
-            </a>
+            </Link>
           </p>
         </div>
       </div>

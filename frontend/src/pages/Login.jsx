@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
 import { apiRequest } from "../utils/api";
@@ -139,12 +140,12 @@ export default function Login() {
           {/* Footer */}
           <p className="text-center text-xs xs:text-sm text-gray-500 mt-8 sm:mt-10">
             Don't have an account?{" "}
-            <a
-              href="/register"
+            <Link
+              to="/register"
               className="font-bold text-marvelRed hover:text-red-400 hover:underline transition"
             >
               Sign up
-            </a>
+            </Link>
           </p>
         </div>
       </div>
